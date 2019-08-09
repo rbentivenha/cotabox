@@ -1,0 +1,25 @@
+type Query {
+  employees: [Employee!]!,
+  chartData: chartData!
+}
+
+type Mutation {
+  createEmployee(firstName: String!, lastName: String!, particip: Float!): Boolean!,
+  removeEmployee(firstName: String!, lastName: String!): Boolean!
+}
+
+# Schema Types
+type Employee {
+  id: String!
+  firstName: String!
+  lastName: String!
+  particip: Float!
+  createdOn: String!
+}
+
+type chartData {
+  ids: [String]!
+  names: [String!]!
+  lastNames: [String!]!
+  particip: [Float!]!
+}

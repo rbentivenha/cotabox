@@ -1,0 +1,23 @@
+{
+  "name": "cotabox-api",
+  "version": "1.0.0",
+  "main": "./src/app.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "npm run test",
+    "dev": "nodemon --exec babel-node src/app.js",
+    "build": "NODE_ENV=PRODUCTION babel src -d dist --copy-files",
+    "serve": "NODE_ENV=production node dist/app.js"
+  },
+  "dependencies": {
+    "graphql-yoga": "^1.18.0",
+    "mongoose": "^5.6.4"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "nodemon": "^1.17.5"
+  }
+}
