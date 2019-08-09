@@ -1,20 +1,16 @@
 ## Running Api
 
-`
-> cd ./cotabox-api/
-> docker-compose up --build
-`
+` > cd ./cotabox-api/ `
+` > docker-compose up --build `
 
 ## Running web
 
-`
-> cd ./cotabox-web/
-> yarn
-> yarn serve
-`
+` > cd ./cotabox-web/ `
+` > yarn `
+` > yarn serve `
 
 # Dependencies
 
-> docker engine
-> node js
-> yarn/npm
+` > docker engine `
+` > node js `
+` > yarn/npm `
