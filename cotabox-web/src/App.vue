@@ -57,16 +57,6 @@ export default {
       return newVal;
     }
   },
-  methods: {
-    onSend(value) {
-    console.log("TCL: onSend -> value", value);
-      
-      if (value) {
-        this.keyChart++;
-        this.keyTable++;
-      }
-    }
-  },
   computed: {
     message: function() {
       if (this.error) return "Something went wrong!";

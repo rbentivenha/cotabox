@@ -70,9 +70,7 @@ import { startDB, models } from './db';
 import resolvers from './graphql/resolvers';
 
 const db = startDB({
-  user: 'graphql',
-  pwd: 'yoga123',
-  db: 'teste',
+  db: 'employees',
   url: 'mongodb:27017'
 })
 

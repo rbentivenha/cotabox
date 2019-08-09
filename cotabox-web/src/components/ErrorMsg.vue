@@ -41,14 +41,14 @@ export default {
     },
     async sendPostRequest() {
       if (this.isValid(this.firstName, this.lastName, this.participation)) {
-        let result;
         try {
-          result = await api.post("/", {
+          await api.post("/", {
             query: `mutation {
                 createEmployee(firstName: "${this.firstName}", lastName: "${this.lastName}", particip: ${this.participation})
             }`
           });
           
+          window.location.reload();
         } catch (e) {
           alert(e);
         }

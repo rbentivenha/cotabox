@@ -1,3 +1,7 @@
+### Attention
+
+You must run the API before the WEB.
+
 ## Running Api
 ```
 cd ./cotabox-api/
