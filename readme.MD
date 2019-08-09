@@ -1,7 +1,9 @@
 ## Running Api
 
-> cd ./cotabox-api/
-> docker-compose up --build
+`
+cd ./cotabox-api/
+docker-compose up --build
+`
 
 ## Running web
 
