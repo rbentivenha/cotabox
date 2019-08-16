@@ -2,7 +2,7 @@ version: "3"
 
 services:
   api:
-    container_name: cotabox-api
+    container_name: api
     restart: always
     build: .
     depends_on:
@@ -13,7 +13,6 @@ services:
       - "4000:4000"
     expose:
       - "4000"
-    #command: "yarn serve"
     environment:
       WAIT_HOSTS: mongodb:27017
   mongodb:
