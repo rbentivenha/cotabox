@@ -4,12 +4,12 @@ You must run the API before the WEB.
 
 ## Running Api
 ```
-cd ./cotabox-api/
+cd ./api/
 docker-compose up --build
 ```
 ## Running web
 ```
-cd ./cotabox-web/
+cd ./web/
 yarn
 yarn serve
 ```
